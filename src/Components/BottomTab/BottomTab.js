@@ -57,7 +57,9 @@ const BottomTab = ( {activeTab} ) => {
     useEffect(() => {
         function updateOpen() {
           if(y.get() <= dragConstraints.top){
-            setState({open: true});
+            setTimeout(() => {
+                setState({open: true});
+            }, 100);
           } else{
             setState({open: false});
           }
@@ -73,7 +75,9 @@ const BottomTab = ( {activeTab} ) => {
     const onTap = (event, info) => {
         if (y.get() >= dragConstraints.bottom-20){
             y.set(dragConstraints.top);
-            setState({open: true});
+            setTimeout(() => {
+                setState({open: true});
+            }, 100);
         }
         else if (y.get() <= dragConstraints.top+20){
             y.set(dragConstraints.bottom);

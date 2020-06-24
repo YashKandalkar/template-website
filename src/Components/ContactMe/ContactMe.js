@@ -16,7 +16,7 @@ import {
     motion
 } from 'framer-motion';
 
-const ContactMe = ({ isOpen }) => {
+const ContactMe = ({ isOpen }) => {    
     return (
         <div className="container">
             <div className="heading">
@@ -30,7 +30,7 @@ const ContactMe = ({ isOpen }) => {
             <motion.div 
                 id="content"
             >
-                {/*Fill in the URLs in usehref attribute*/}
+                {/* Fill in the URLs in usehref attribute */}
                 <Icon 
                     icon={faInstagram} 
                     useclass='instagram' 
@@ -56,9 +56,9 @@ const ContactMe = ({ isOpen }) => {
             <div id="credit">
                 {
                     (isOpen)?
-                    <a href="https://yashkandalkar.github.io/" target='_blank' rel='noopener noreferrer'>
-                        Website Template made by Yash
-                    </a>
+                            <a href="https://yashkandalkar.github.io/" target='_blank' rel='noopener noreferrer'>
+                                Website Template made by Yash
+                            </a>
                     :""
                 }
             </div>
