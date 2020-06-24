@@ -1,0 +1,8 @@
+[0616/173402.198:ERROR:process_reader_win.cc(127)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0616/173402.198:ERROR:process_reader_win.cc(127)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0616/173402.339:ERROR:exception_snapshot_win.cc(99)] thread ID 9384 not found in process
+[0616/173402.339:ERROR:exception_snapshot_win.cc(99)] thread ID 5396 not found in process
+[0616/173402.339:ERROR:process_info.cc(617)] range at 0x0, size 0x18 fully unreadable
+[0616/173402.339:ERROR:process_info.cc(617)] range at 0x0, size 0x18 fully unreadable
+[0616/173402.339:ERROR:process_info.cc(617)] range at 0x0, size 0x18 fully unreadable
+[0616/173402.370:ERROR:process_memory_win.cc(73)] ReadMemory at 0x140000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)

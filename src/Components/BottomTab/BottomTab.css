@@ -1,0 +1,36 @@
+.bottom-tab{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.bottom-tab-arrow{
+    position: absolute;
+    top:0;
+    height: 30px;
+    width: 100vw;
+    background: #fff;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-tab-content{
+    position: absolute;
+    top: 30px;
+    height: 50vh;
+    width: 100%;
+    z-index: 100;
+    user-select: none;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+@media only screen and (max-width: 480px){
+    .bottom-tab-content{
+        height: calc(100vh - 30px);
+    }
+}

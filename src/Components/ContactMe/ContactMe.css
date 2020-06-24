@@ -1,0 +1,61 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.main{
+    text-align: left;
+}
+
+.heading{
+    margin: 22px 0;
+    font-family: Arbutus Slab;
+    font-size: 2em;
+    color: #DDFC74;
+}
+
+.sub-heading{
+    font-size: 0.8em;
+    text-align: left;
+    color: grey;
+    max-width: 300px;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#credit{
+    position: absolute;
+    text-align: center;
+    bottom: 5px;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 480px){
+    .heading{
+        margin: 0;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main{
+        text-align: center;
+    }
+    .sub-heading{
+        text-align: center;
+    }
+}
